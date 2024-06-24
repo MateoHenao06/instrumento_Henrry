@@ -14,7 +14,7 @@ h1{
 .container{
     margin: 200px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 .container p{
     text-align: justify;
@@ -40,7 +40,7 @@ footer p{
     color: rgb(185, 104, 226);
 }
 hr{
-    width: 60%; 
+    width: 100%; 
     border-style: solid; 
     border-width: 0.1px; 
     border-color:  rgb(185, 104, 226); 
