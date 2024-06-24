@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: rgb(255, 248, 241);
 }
@@ -10,19 +14,18 @@ h1{
 .container{
     margin: 200px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-direction: row;
 }
 .container p{
     text-align: justify;
 }
 .caja1{
     background-color: rgb(255, 255, 255);
-    align-items: center;
     padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px;
+    height: 10cm;
 }
 .caja2{
     background-color: rgb(255, 255, 255);
@@ -30,14 +33,7 @@ h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px;
-}
-.caja3{
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
+    margin-top: 25%;
 }
 footer p{
     text-align: center;
@@ -50,5 +46,24 @@ hr{
     border-color:  rgb(185, 104, 226); 
 }
 footer{
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    hr{
+        width: 100%;
+        border-color: rgb(185, 104, 226); ;
+    }
 }
